@@ -1,4 +1,4 @@
 class PersonalTrainer < ActiveRecord::Base
- has many :routines
- has many :exercises, through: :routines
+ has_many :routines
+ has_many :exercises, through: :routines
 end
