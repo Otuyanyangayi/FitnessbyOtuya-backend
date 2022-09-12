@@ -23,6 +23,8 @@ GEM
     database_cleaner-core (2.0.1)
     diff-lcs (1.5.0)
     eventmachine (1.2.7)
+    faker (2.23.0)
+      i18n (>= 1.8.11, < 2)
     ffi (1.15.5)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
@@ -74,6 +76,9 @@ GEM
       rack (~> 2.2)
       rack-protection (= 2.2.2)
       tilt (~> 2.0)
+    sinatra-activerecord (2.0.25)
+      activerecord (>= 4.1)
+      sinatra (>= 1.0)
     sinatra-contrib (2.2.2)
       multi_json
       mustermann (~> 2.0)
@@ -93,8 +98,10 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  activerecord (~> 6.1)
   database_cleaner (~> 2.0)
-  pg
+  faker (~> 2.18)
+  pg (~> 1.4, >= 1.4.3)
   pry (~> 0.14.1)
   rack-contrib (~> 2.3)
   rack-cors (~> 1.1)
@@ -105,8 +112,12 @@ DEPENDENCIES
   rspec (~> 3.10)
   rspec-json_expectations (~> 2.2)
   sinatra (~> 2.1)
+  sinatra-activerecord (~> 2.0)
   sinatra-contrib (~> 2.2, >= 2.2.2)
   thin (~> 1.8)
+
+RUBY VERSION
+   ruby 2.7.4p191
 
 BUNDLED WITH
    2.3.20
