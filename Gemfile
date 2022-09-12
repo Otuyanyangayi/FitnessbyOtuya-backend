@@ -29,12 +29,13 @@ gem "rack-cors", "~> 1.1"
 gem "rake", "~> 13.0"
 
 # Provides functionality to interact with a SQLite3 database
- # gem "sqlite3", "~> 1.4"
+  gem "sqlite3", "~> 1.4"
 
  # gem 'pg'
 
  
-# gem 'sinatra-contrib', '~> 2.2', '>= 2.2.2',require: false
+
+#gem 'sinatra-contrib', '~> 2.2', '>= 2.2.2',require: false
 
 
 
