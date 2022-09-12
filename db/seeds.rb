@@ -41,6 +41,12 @@ Routine.create(
     personal_trainer_id: PersonalTrainer.first.id,
     routine_image: "https://darebee.com/images/workouts/muscles/dragon-lord-workout.jpg"
 )
+Routines.create(
+    routine_name: "HARDY",
+    muscle_group: "Upper Body",
+    personal_trainer_id: PersonalTrainer.last.id,
+    routine_image: "https://darebee.com/images/workouts/muscles/hardy-workout.jpg"
+)
 
 # Creating Exercises
 Exercise.create(
